@@ -1,0 +1,41 @@
+{
+  "destinationPostalCode": "4051",
+  "destinationCountry": "AU",
+  "originPostalCode": "49423",
+  "originCountry": "US",
+  "weight": 2.722,
+  "customsClearanceDetail": {
+    "dutiesPayment": {
+      "paymentType": "SENDER",
+      "payor": {
+        "responsibleParty": {
+          "accountNumber": {
+            "value": "852853727"
+          }
+        }
+      }
+    },
+    "commodities": [
+      {
+        "name": "Headrest for Embody Chair - Sync Fabric - Dark Carbon Sync Graphite Frame",
+        "description": "Headrest for Embody Chair - Sync Fabric - Dark Carbon Sync Graphite Frame",
+        "countryOfManufacture": "US",
+        "quantity": 1,
+        "quantityUnits": "EA",
+        "unitPrice": {
+          "amount": 182.61,
+          "currency": "USD"
+        },
+        "customsValue": {
+          "amount": 182.61,
+          "currency": "USD"
+        },
+        "harmonizedCode": "940370000000"
+      }
+    ],
+    "commercialInvoice": {
+      "termsOfSale": "DDP",
+      "shipmentPurpose": "SOLD"
+    }
+  }
+}

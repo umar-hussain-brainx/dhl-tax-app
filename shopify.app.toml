@@ -1,0 +1,41 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "b1653c79707c6fd5b7a89e1bacd47765"
+name = "dhl-tax-app"
+handle = "dhl-tax-app"
+application_url = "https://36ab-116-58-41-131.ngrok-free.app"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "omartestings.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_assigned_fulfillment_orders,read_fulfillments,read_locations,read_merchant_managed_fulfillment_orders,read_orders,read_third_party_fulfillment_orders,write_orders"
+
+[auth]
+redirect_urls = [
+  "https://36ab-116-58-41-131.ngrok-free.app/auth/callback",
+  "https://36ab-116-58-41-131.ngrok-free.app/auth/shopify/callback",
+  "https://36ab-116-58-41-131.ngrok-free.app/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-10"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+  [[webhooks.subscriptions]]
+  topics = [ "fulfillments/create" ]
+  uri = "/webhooks/fulfillments/create"
+
+  [[webhooks.subscriptions]]
+  topics = [ "orders/create" ]
+  uri = "/webhooks/orders/create"
+
+[pos]
+embedded = false

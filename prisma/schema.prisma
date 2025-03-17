@@ -1,0 +1,108 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = "mongodb+srv://atlasDatabase:atlasheadrest!@atlasserverless.upngntj.mongodb.net/taxapp"
+}
+
+model Session {
+  id            String    @id @default(auto()) @map("_id") @db.ObjectId
+  shop          String
+  state         String
+  isOnline      Boolean   @default(false)
+  scope         String?
+  expires       DateTime?
+  accessToken   String
+  userId        BigInt?
+  firstName     String?
+  lastName      String?
+  email         String?
+  accountOwner  Boolean   @default(false)
+  locale        String?
+  collaborator  Boolean?  @default(false)
+  emailVerified Boolean?  @default(false)
+}
+
+model ShippingRateWithTaxDuty {
+  id            String    @id @default(auto()) @map("_id") @db.ObjectId
+  orderId               String   @unique
+  shopifyOrderId        String   @map("shopify_order_id")
+  
+  // FedEx Rate Information
+  fedexTotalAmount      Float    @map("fedex_total_amount")
+  fedexCurrency         String   @map("fedex_currency")
+  fedexServiceType      String   @map("fedex_service_type")
+  fedexTransitTime      String?  @map("fedex_transit_time")
+  fedexRateId           String   @map("fedex_rate_id")
+  
+  // FedEx Tax Information
+  fedexTaxAmount        Float    @map("fedex_tax_amount")
+  fedexTaxCurrency      String   @map("fedex_tax_currency")
+  fedexTaxType          String?  @map("fedex_tax_type")
+  fedexTaxDescription   String?  @map("fedex_tax_description")
+  
+  // FedEx Duty Information
+  fedexDutyAmount       Float    @map("fedex_duty_amount")
+  fedexDutyCurrency     String   @map("fedex_duty_currency")
+  fedexDutyDescription  String?  @map("fedex_duty_description")
+  
+  // Shopify Tax Information
+  shopifyTaxAmount      Float    @map("shopify_tax_amount")
+  shopifyTaxCurrency    String   @map("shopify_tax_currency")
+  shopifyTaxLines       String?  @map("shopify_tax_lines") // JSON string
+  
+  // Shopify Duty Information
+  shopifyDutyAmount     Float    @map("shopify_duty_amount")
+  shopifyDutyCurrency   String   @map("shopify_duty_currency")
+  shopifyDutyDescription String? @map("shopify_duty_description")
+  
+  // DHL fields
+  dhlTaxAmount     Float?   @map("dhl_tax_amount")
+  dhlDutyAmount    Float?   @map("dhl_duty_amount")
+  dhlCurrency      String?  @map("dhl_currency")
+  trackingId       String?  @map("tracking_id")
+
+  // UPS fields
+  upsTotalAmount     Float?   @map("ups_total_amount")
+  upsTaxDutyAmount     Float?   @map("ups_tax_amount")
+  
+  status                String   @default("PENDING") @map("status")
+  createdAt             DateTime @default(now()) @map("created_at")
+  updatedAt             DateTime @updatedAt @map("updated_at")
+
+  @@index([shopifyOrderId])
+  @@index([status])
+  @@map("shipping_rates_tax_duty")
+}
+
+model OrderPayload {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  orderNumber   String   
+  shopifyPayload Json    @map("shopify_payload")
+  fedexPayload  Json    @map("fedex_payload")
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+}
+
+model TransitTime {
+  id                    String    @id @default(auto()) @map("_id") @db.ObjectId
+  invoiceDate          DateTime    @map("invoice_data")
+  invoiceNumber        String    @map("invoice_number")
+  shipmentDate         DateTime  @map("shipment_date")
+  podDeliveryDate      DateTime  @map("pod_delivery_date")
+  podDeliveryTime      String    @map("pod_delivery_time")
+  recipientCountry     String    @map("recipient_country")
+  trackingId           String    @map("tracking_id")
+  serviceType          String    @default("Express") @map("service_type")
+  createdAt            DateTime  @default(now()) @map("created_at")
+  updatedAt            DateTime  @updatedAt @map("updated_at")
+
+  @@index([invoiceNumber])
+  @@index([trackingId])
+  @@map("transit_times")
+}

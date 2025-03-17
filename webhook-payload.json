@@ -1,0 +1,401 @@
+{
+  "id": 11396310991212,
+  "admin_graphql_api_id": "gid://shopify/Order/11396310991212",
+  "app_id": 580111,
+  "browser_ip": "144.6.245.222",
+  "buyer_accepts_marketing": false,
+  "cancel_reason": null,
+  "cancelled_at": null,
+  "cart_token": "Z2NwLWFzaWEtc291dGhlYXN0MTowMUpQSDdKTVZNUU5NREI0MDBDSjhXTkVRWg",
+  "checkout_id": 63292659171692,
+  "checkout_token": "5b9943048331a8671e3cf3672d6e3d23",
+  "client_details": {
+    "accept_language": "en-AU",
+    "browser_height": null,
+    "browser_ip": "144.6.245.222",
+    "browser_width": null,
+    "session_hash": null,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+  },
+  "closed_at": null,
+  "company": null,
+  "confirmation_number": "X8LHZFHUN",
+  "confirmed": true,
+  "contact_email": "benazzi02@gmail.com",
+  "created_at": "2025-03-17T01:02:43-04:00",
+  "currency": "USD",
+  "current_shipping_price_set": {
+    "shop_money": {
+      "amount": "21.12",
+      "currency_code": "USD"
+    },
+    "presentment_money": {
+      "amount": "33.41",
+      "currency_code": "AUD"
+    }
+  },
+  "current_subtotal_price": "192.61",
+  "current_subtotal_price_set": {
+    "shop_money": {
+      "amount": "192.61",
+      "currency_code": "USD"
+    },
+    "presentment_money": {
+      "amount": "304.68",
+      "currency_code": "AUD"
+    }
+  },
+  "current_total_additional_fees_set": null,
+  "current_total_discounts": "0.00",
+  "current_total_discounts_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "USD"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "AUD"
+    }
+  },
+  "current_total_duties_set": null,
+  "current_total_price": "213.73",
+  "current_total_price_set": {
+    "shop_money": {
+      "amount": "213.73",
+      "currency_code": "USD"
+    },
+    "presentment_money": {
+      "amount": "338.09",
+      "currency_code": "AUD"
+    }
+  },
+  "current_total_tax": "0.00",
+  "current_total_tax_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "USD"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "AUD"
+    }
+  },
+  "customer_locale": "en-AU",
+  "device_id": null,
+  "discount_codes": [],
+  "duties_included": false,
+  "email": "benazzi02@gmail.com",
+  "estimated_taxes": false,
+  "financial_status": "authorized",
+  "fulfillment_status": null,
+  "landing_site": "/cart/update.js?fast_storefront_renderer=0",
+  "landing_site_ref": null,
+  "location_id": null,
+  "merchant_business_entity_id": "MTI4MDgwOTk2NDQw",
+  "merchant_of_record_app_id": null,
+  "name": "83199",
+  "note": null,
+  "note_attributes": [],
+  "number": 82199,
+  "order_number": 83199,
+  "order_status_url": "https://atlasheadrest.com/28080996440/orders/c0533db05caaf71553380378a57ab64e/authenticate?key=242b4adffbe4765357d34b9bf6312a01",
+  "original_total_additional_fees_set": null,
+  "original_total_duties_set": null,
+  "payment_gateway_names": [
+    "paypal"
+  ],
+  "phone": null,
+  "po_number": null,
+  "presentment_currency": "AUD",
+  "processed_at": "2025-03-17T01:02:39-04:00",
+  "reference": null,
+  "referring_site": "https://atlasheadrest.com/en-au/products/headrest-for-embody-gaming-chair?srsltid=AfmBOorm3uebuS_RUo16a1b088X6R_HmaeFcLGzcfvx3GcJ8c52OqgF3",
+  "source_identifier": null,
+  "source_name": "web",
+  "source_url": null,
+  "subtotal_price": "192.61",
+  "subtotal_price_set": {
+    "shop_money": {
+      "amount": "192.61",
+      "currency_code": "USD"
+    },
+    "presentment_money": {
+      "amount": "304.68",
+      "currency_code": "AUD"
+    }
+  },
+  "tags": "",
+  "tax_exempt": false,
+  "tax_lines": [],
+  "taxes_included": false,
+  "test": false,
+  "token": "c0533db05caaf71553380378a57ab64e",
+  "total_cash_rounding_payment_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "USD"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "AUD"
+    }
+  },
+  "total_cash_rounding_refund_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "USD"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "AUD"
+    }
+  },
+  "total_discounts": "0.00",
+  "total_discounts_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "USD"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "AUD"
+    }
+  },
+  "total_line_items_price": "192.61",
+  "total_line_items_price_set": {
+    "shop_money": {
+      "amount": "192.61",
+      "currency_code": "USD"
+    },
+    "presentment_money": {
+      "amount": "304.68",
+      "currency_code": "AUD"
+    }
+  },
+  "total_outstanding": "0.00",
+  "total_price": "213.73",
+  "total_price_set": {
+    "shop_money": {
+      "amount": "213.73",
+      "currency_code": "USD"
+    },
+    "presentment_money": {
+      "amount": "338.09",
+      "currency_code": "AUD"
+    }
+  },
+  "total_shipping_price_set": {
+    "shop_money": {
+      "amount": "21.12",
+      "currency_code": "USD"
+    },
+    "presentment_money": {
+      "amount": "33.41",
+      "currency_code": "AUD"
+    }
+  },
+  "total_tax": "0.00",
+  "total_tax_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "USD"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "AUD"
+    }
+  },
+  "total_tip_received": "0.00",
+  "total_weight": 2722,
+  "updated_at": "2025-03-17T01:02:44-04:00",
+  "user_id": null,
+  "billing_address": {
+    "first_name": "Ben",
+    "address1": "23 Yarradale Street",
+    "phone": "+61477230121",
+    "city": "NEWMARKET",
+    "zip": "4051",
+    "province": "Queensland",
+    "country": "Australia",
+    "last_name": "Azzi",
+    "address2": null,
+    "company": null,
+    "latitude": null,
+    "longitude": null,
+    "name": "Ben Azzi",
+    "country_code": "AU",
+    "province_code": "QLD"
+  },
+  "customer": {
+    "id": 22920802468204,
+    "email": "benazzi02@gmail.com",
+    "created_at": "2025-03-17T01:02:39-04:00",
+    "updated_at": "2025-03-17T01:02:43-04:00",
+    "first_name": "Ben",
+    "last_name": "Azzi",
+    "state": "disabled",
+    "note": null,
+    "verified_email": true,
+    "multipass_identifier": null,
+    "tax_exempt": false,
+    "phone": null,
+    "email_marketing_consent": {
+      "state": "not_subscribed",
+      "opt_in_level": "single_opt_in",
+      "consent_updated_at": null
+    },
+    "sms_marketing_consent": null,
+    "tags": "",
+    "currency": "AUD",
+    "tax_exemptions": [],
+    "admin_graphql_api_id": "gid://shopify/Customer/22920802468204",
+    "default_address": {
+      "id": 34383662186860,
+      "customer_id": 22920802468204,
+      "first_name": "Ben",
+      "last_name": "Azzi",
+      "company": null,
+      "address1": "23 Yarradale Street",
+      "address2": null,
+      "city": "NEWMARKET",
+      "province": "Queensland",
+      "country": "Australia",
+      "zip": "4051",
+      "phone": "+61477230121",
+      "name": "Ben Azzi",
+      "province_code": "QLD",
+      "country_code": "AU",
+      "country_name": "Australia",
+      "default": true
+    }
+  },
+  "discount_applications": [],
+  "fulfillments": [],
+  "line_items": [
+    {
+      "id": 34236521546092,
+      "admin_graphql_api_id": "gid://shopify/LineItem/34236521546092",
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 2722,
+      "name": "Headrest for Embody Chair - Sync Fabric - Dark Carbon Sync Graphite Frame",
+      "pre_tax_price": "192.61",
+      "pre_tax_price_set": {
+        "shop_money": {
+          "amount": "192.61",
+          "currency_code": "USD"
+        },
+        "presentment_money": {
+          "amount": "304.68",
+          "currency_code": "AUD"
+        }
+      },
+      "price": "192.61",
+      "price_set": {
+        "shop_money": {
+          "amount": "192.61",
+          "currency_code": "USD"
+        },
+        "presentment_money": {
+          "amount": "304.68",
+          "currency_code": "AUD"
+        }
+      },
+      "product_exists": true,
+      "product_id": 8065253179671,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "EG1T3SY11",
+      "taxable": true,
+      "title": "Headrest for Embody Chair - Sync Fabric",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "USD"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "AUD"
+        }
+      },
+      "variant_id": 44234656088343,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Dark Carbon Sync Graphite Frame",
+      "vendor": "Atlas Headrest",
+      "tax_lines": [],
+      "duties": [],
+      "discount_allocations": []
+    }
+  ],
+  "payment_terms": null,
+  "refunds": [],
+  "shipping_address": {
+    "first_name": "Ben",
+    "address1": "23 Yarradale Street",
+    "phone": "+61477230121",
+    "city": "NEWMARKET",
+    "zip": "4051",
+    "province": "Queensland",
+    "country": "Australia",
+    "last_name": "Azzi",
+    "address2": null,
+    "company": null,
+    "latitude": -27.4275971,
+    "longitude": 153.0079859,
+    "name": "Ben Azzi",
+    "country_code": "AU",
+    "province_code": "QLD"
+  },
+  "shipping_lines": [
+    {
+      "id": 10642034819436,
+      "carrier_identifier": null,
+      "code": "FEDEX_INTERNATIONAL_CONNECT_PLUS",
+      "current_discounted_price_set": {
+        "shop_money": {
+          "amount": "21.12",
+          "currency_code": "USD"
+        },
+        "presentment_money": {
+          "amount": "33.41",
+          "currency_code": "AUD"
+        }
+      },
+      "discounted_price": "21.12",
+      "discounted_price_set": {
+        "shop_money": {
+          "amount": "21.12",
+          "currency_code": "USD"
+        },
+        "presentment_money": {
+          "amount": "33.41",
+          "currency_code": "AUD"
+        }
+      },
+      "is_removed": false,
+      "phone": null,
+      "price": "21.12",
+      "price_set": {
+        "shop_money": {
+          "amount": "21.12",
+          "currency_code": "USD"
+        },
+        "presentment_money": {
+          "amount": "33.41",
+          "currency_code": "AUD"
+        }
+      },
+      "requested_fulfillment_service_id": null,
+      "source": "fedex",
+      "title": "FedEx International Connect Plus",
+      "tax_lines": [],
+      "discount_allocations": []
+    }
+  ],
+  "returns": []
+}
