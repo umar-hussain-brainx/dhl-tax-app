@@ -1,5 +1,5 @@
 import { DataTable, DatePicker, Button, Box, Popover, ButtonGroup, Card, Text, Select } from "@shopify/polaris";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 // Add this at the top of the file, outside the component
 const dateFormatter = new Intl.DateTimeFormat('en-US', {
@@ -9,15 +9,28 @@ const dateFormatter = new Intl.DateTimeFormat('en-US', {
 });
 
 export function ShippingRatesTable({ onPageChange, totalItems, currentPage: externalPage, rates, comparisonResults, isLoading }) {
-  const [selectedDates, setSelectedDates] = useState({
-    start: new Date(new Date().setMonth(new Date().getMonth() - 1)),
-    end: new Date(),
+  const [{ month, year }, setDate] = useState(() => {
+    const today = new Date();
+    return {
+      month: today.getMonth(),
+      year: today.getFullYear(),
+    };
+  });
+  
+  const [selectedDates, setSelectedDates] = useState(() => {
+    const today = new Date();
+    const endDate = new Date(today);
+    
+    // Change the default range from one month to one week
+    const startDate = new Date(today);
+    startDate.setDate(today.getDate() - 7); // Changed from 30 to 7
+    
+    return {
+      start: startDate,
+      end: endDate,
+    };
   });
   const [datePopoverActive, setDatePopoverActive] = useState(false);
-  const [{ month, year }, setDate] = useState({
-    month: selectedDates.start.getMonth(),
-    year: selectedDates.start.getFullYear(),
-  });
   const [selectedStatus, setSelectedStatus] = useState('all');
   
   const statusOptions = [
@@ -63,10 +76,10 @@ export function ShippingRatesTable({ onPageChange, totalItems, currentPage: exte
       'FedEx Duty': rate.fedexDutyAmount,
       'Shopify Tax': rate.shopifyTaxAmount,
       'Shopify Duty': rate.shopifyDutyAmount,
-      'DHL Tax': rate.dhlTaxAmount || '',
-      'DHL Duty': rate.dhlDutyAmount || '',
-      'UPS Total Amount': rate.upsTotalAmount || '',
-      'UPS Tax Duty': rate.upsTaxDutyAmount || '',
+      'DHL Tax': rate.dhlTaxAmount,
+      'DHL Duty': rate.dhlDutyAmount,
+      'UPS Total Amount': rate.upsTotalAmount,
+      'UPS Tax Duty': rate.upsTaxDutyAmount,
       'Status': rate.status,
       'Created At': dateFormatter.format(new Date(rate.createdAt)),
       'Tracking ID': rate.trackingId || 'N/A'
@@ -92,6 +105,7 @@ export function ShippingRatesTable({ onPageChange, totalItems, currentPage: exte
   // console.log("📊 Rendering shipping rates table with data:", rates);
 
   const getRowContent = (rate) => {
+    console.log("rate", rate);
     const baseContent = [
       rate.shopifyOrderId,
       `${rate.fedexTotalAmount} ${rate.fedexCurrency}`,
@@ -171,6 +185,33 @@ export function ShippingRatesTable({ onPageChange, totalItems, currentPage: exte
     { label: "Status", key: "status" },
     { label: "Actions", key: "actions" },
   ];
+
+  // Update the default selected range option
+  const [selectedRangeOption, setSelectedRangeOption] = useState('last7Days'); // Changed from 'last30Days'
+  
+  const handleRangeChange = useCallback((value) => {
+    setSelectedRangeOption(value);
+    
+    const today = new Date();
+    const endDate = new Date(today);
+    let startDate = new Date(today);
+    
+    // Update the date calculation based on the selected range
+    switch (value) {
+      case 'last7Days':
+        startDate.setDate(today.getDate() - 7);
+        break;
+      case 'last30Days':
+        startDate.setDate(today.getDate() - 30);
+        break;
+      // Other cases...
+    }
+    
+    setSelectedDates({
+      start: startDate,
+      end: endDate,
+    });
+  }, []);
 
   return (
     <>

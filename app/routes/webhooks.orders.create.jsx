@@ -2,7 +2,7 @@ import { authenticate } from "../shopify.server";
 import db from "../db.server";
 import fs from "fs";
 import path from "path";
-import {getDhlCost} from '../utilities/dhl-helper'
+import {getDhlLandedCost} from '../utilities/dhl-helper'
 import { getOrderData } from "../utilities/helpers";
 import { getUpsLandedCost } from "../utilities/ups-helper";
 let tokenCache = {
@@ -204,13 +204,15 @@ export const action = async ({ request }) => {
 
   // console.log("Webhook received for shop:", shop);
   // console.log("Shipping service:", payload.shipping_lines[0]?.title);
-
   if (!admin) return null;
 
-  // const locationData = await getOrderData(payload.admin_graphql_api_id, admin);
-  // console.log('location data', locationData);
-  // const dhlData = await getDhlCost(payload, locationData);
-  // console.log("✅ DHL API Response received:", JSON.stringify(dhlData, null, 2));
+  const locationData = await getOrderData(payload.admin_graphql_api_id, admin);
+  console.log('location data', locationData);
+  const dhlData = await getDhlLandedCost(payload) 
+  // write dhlData to a file
+  const dhlDataPath = path.join(process.cwd(), "dhl-data.json");
+  fs.writeFileSync(dhlDataPath, JSON.stringify(dhlData, null, 2));
+  console.log("✅ DHL API Response received:", JSON.stringify(dhlData, null, 2));
   
 
   const filePath = path.join(process.cwd(), "webhook-payload.json");
@@ -409,10 +411,10 @@ export const action = async ({ request }) => {
       shopifyDutyCurrency: payload.currency,
       shopifyDutyDescription: "Import Duties and Taxes",
 
-      // Add DHL data
-      dhlTaxAmount: 0,
-      dhlDutyAmount: 0,
-      dhlCurrency: "",
+      // add dhl data
+      dhlTaxAmount: dhlData.dhlTaxAmount,
+      dhlDutyAmount: dhlData.dhlDutyAmount,
+      dhlCurrency: dhlData.dhlCurrency,
 
       // add ups data
       upsTotalAmount: Number(upsData.grandTotal || 0),

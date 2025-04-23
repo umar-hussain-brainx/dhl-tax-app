@@ -1,5 +1,4 @@
 import { authenticate } from "../shopify.server";
-import db from "../db.server";
 import { OrderService } from "../services/OrderService";
 export const action = async ({ request }) => {
   return new Response(null, { status: 200 });

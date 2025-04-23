@@ -1,5 +1,5 @@
 {
-  "transactionId": "da82b6b5-8736-4f9c-a336-662294f5985a",
+  "transactionId": "855262dd-38c5-496c-a275-bafc77c20b8d",
   "output": {
     "alerts": [
       {
@@ -15,17 +15,17 @@
     ],
     "rateReplyDetails": [
       {
-        "serviceType": "INTERNATIONAL_ECONOMY",
-        "serviceName": "FedEx International Economy®",
+        "serviceType": "INTERNATIONAL_FIRST",
+        "serviceName": "FedEx International First®",
         "packagingType": "YOUR_PACKAGING",
         "commit": {
           "dateDetail": {
-            "dayOfWeek": "Wed",
-            "dayFormat": "2025-03-26T18:00:00"
+            "dayOfWeek": "Thu",
+            "dayFormat": "2025-04-17T10:00:00"
           },
           "commodityName": "FURNITURE",
           "deliveryMessages": [
-            " 6:00 P.M. IF NO CUSTOMS DELAY"
+            "10:00 A.M. IF NO CUSTOMS DELAY"
           ],
           "requiredDocuments": [
             "INTERNATIONAL_AIRWAY_BILL",
@@ -40,13 +40,13 @@
             "locationNumber": 0
           },
           "derivedDestinationDetail": {
-            "countryCode": "AU",
-            "stateOrProvinceCode": "QL",
-            "postalCode": "4051",
-            "serviceArea": "PM",
-            "locationId": "WTBA ",
+            "countryCode": "DE",
+            "stateOrProvinceCode": "NW",
+            "postalCode": "40547",
+            "serviceArea": "A2",
+            "locationId": "NRNA ",
             "locationNumber": 0,
-            "airportId": "BNE"
+            "airportId": "CGN"
           },
           "saturdayDelivery": false
         },
@@ -54,10 +54,6 @@
           {
             "code": "SERVICE.TYPE.INTERNATIONAL.MESSAGE",
             "message": "Rate does not include duties & taxes, clearance entry fees or other import fees.  The payor of duties/taxes/fees will be responsible for any applicable Clearance Entry Fees."
-          },
-          {
-            "code": "EDT.DETAILS.MISSING",
-            "message": "The harmonized code for the commodity at array index 1 is missing or invalid; estimated duties and taxes were not returned."
           },
           {
             "code": "DUTIES.TAXES.ESTIMATED",
@@ -73,34 +69,40 @@
             "rateType": "ACCOUNT",
             "ratedWeightMethod": "ACTUAL",
             "totalDiscounts": 0,
-            "totalBaseCharge": 288.7,
-            "totalNetCharge": 47.71,
+            "totalBaseCharge": 264.4,
+            "totalNetCharge": 323.23,
             "totalVatCharge": 0,
-            "totalNetFedExCharge": 47.71,
-            "totalDutiesAndTaxes": 0,
-            "totalNetChargeWithDutiesAndTaxes": 47.71,
-            "totalDutiesTaxesAndFees": 0,
+            "totalNetFedExCharge": 323.23,
+            "totalDutiesAndTaxes": 96.18,
+            "totalNetChargeWithDutiesAndTaxes": 419.41,
+            "edtCharges": [
+              {
+                "harmonizedCode": "940370000000",
+                "edtTaxDetail": {
+                  "edtTaxType": "GENERAL_SALES_TAX",
+                  "effectiveDate": "2025-04-15",
+                  "name": "VAT [Value Added Tax; Umsatzsteuer; ]",
+                  "taxableValue": 506.22,
+                  "description": "Reduced rate: 7%",
+                  "formula": "Amount = DPV * 0.19",
+                  "amount": 96.18
+                }
+              }
+            ],
+            "totalDutiesTaxesAndFees": 96.18,
             "totalAncillaryFeesAndTaxes": 0,
             "shipmentRateDetail": {
               "rateZone": "US001O",
-              "dimDivisor": 166,
-              "fuelSurchargePercent": 22.5,
-              "totalSurcharges": 8.76,
-              "totalFreightDiscount": 249.75,
-              "freightDiscount": [
-                {
-                  "type": "VOLUME",
-                  "description": "Volume discount",
-                  "amount": 249.75,
-                  "percent": 86.51
-                }
-              ],
+              "dimDivisor": 139,
+              "fuelSurchargePercent": 22.25,
+              "totalSurcharges": 58.83,
+              "totalFreightDiscount": 0,
               "surCharges": [
                 {
                   "type": "FUEL",
                   "description": "Fuel Surcharge",
                   "level": "SHIPMENT",
-                  "amount": 8.76
+                  "amount": 58.83
                 }
               ],
               "pricingCode": "",
@@ -111,14 +113,14 @@
               },
               "totalBillingWeight": {
                 "units": "KG",
-                "value": 2.7
+                "value": 1.7
               },
-              "dimDivisorType": "PRODUCT",
+              "dimDivisorType": "COUNTRY",
               "currency": "USD",
-              "rateScale": "US001OFJ_03_YOUR_PACKAGING",
+              "rateScale": "US001OFD_06_YOUR_PACKAGING",
               "totalRateScaleWeight": {
                 "units": "LB",
-                "value": 6
+                "value": 4
               }
             },
             "ratedPackages": [
@@ -128,32 +130,24 @@
                 "packageRateDetail": {
                   "rateType": "PAYOR_ACCOUNT_SHIPMENT",
                   "ratedWeightMethod": "ACTUAL",
-                  "baseCharge": 288.7,
-                  "netFreight": 38.95,
-                  "totalSurcharges": 8.76,
-                  "netFedExCharge": 47.71,
+                  "baseCharge": 264.4,
+                  "netFreight": 264.4,
+                  "totalSurcharges": 58.83,
+                  "netFedExCharge": 323.23,
                   "totalTaxes": 0,
-                  "netCharge": 47.71,
+                  "netCharge": 323.23,
                   "totalRebates": 0,
                   "billingWeight": {
                     "units": "KG",
-                    "value": 2.7
+                    "value": 1.7
                   },
-                  "totalFreightDiscounts": 249.75,
-                  "freightDiscounts": [
-                    {
-                      "type": "VOLUME",
-                      "description": "Volume",
-                      "amount": 249.75,
-                      "percent": 86.51
-                    }
-                  ],
+                  "totalFreightDiscounts": 0,
                   "surcharges": [
                     {
                       "type": "FUEL",
                       "description": "Fuel Surcharge",
                       "level": "SHIPMENT",
-                      "amount": 8.76
+                      "amount": 58.83
                     }
                   ],
                   "currency": "USD"
@@ -175,20 +169,289 @@
             "A4"
           ],
           "destinationLocationIds": [
-            "WTBA "
+            "NRNA "
           ],
           "destinationLocationNumbers": [
             0
           ],
           "destinationServiceAreas": [
-            "PM"
+            "A2"
           ],
           "destinationLocationStateOrProvinceCodes": [
-            "QL"
+            "NW"
           ],
-          "deliveryDate": "2025-03-26T18:00:00",
+          "deliveryDate": "2025-04-17T10:00:00",
+          "deliveryDay": "THU",
+          "commitDate": "2025-04-17T10:00:00",
+          "commitDays": [
+            "THU"
+          ],
+          "ineligibleForMoneyBackGuarantee": false,
+          "astraDescription": "INTL1ST",
+          "originPostalCodes": [
+            "49423"
+          ],
+          "stateOrProvinceCodes": [
+            "MI"
+          ],
+          "countryCodes": [
+            "US"
+          ],
+          "airportId": "CGN",
+          "serviceCode": "06",
+          "destinationPostalCode": "40547"
+        },
+        "signatureOptionType": "SERVICE_DEFAULT",
+        "serviceDescription": {
+          "serviceId": "EP1000000007",
+          "serviceType": "INTERNATIONAL_FIRST",
+          "code": "06",
+          "names": [
+            {
+              "type": "long",
+              "encoding": "utf-8",
+              "value": "FedEx International First®"
+            },
+            {
+              "type": "long",
+              "encoding": "ascii",
+              "value": "FedEx International First"
+            },
+            {
+              "type": "medium",
+              "encoding": "utf-8",
+              "value": "FedEx International First®"
+            },
+            {
+              "type": "medium",
+              "encoding": "ascii",
+              "value": "FedEx International First"
+            },
+            {
+              "type": "short",
+              "encoding": "utf-8",
+              "value": "FO"
+            },
+            {
+              "type": "short",
+              "encoding": "ascii",
+              "value": "FO"
+            },
+            {
+              "type": "abbrv",
+              "encoding": "ascii",
+              "value": "FO"
+            }
+          ],
+          "serviceCategory": "parcel",
+          "description": "International First",
+          "astraDescription": "INTL1ST"
+        },
+        "deliveryStation": "NRNA "
+      },
+      {
+        "serviceType": "INTERNATIONAL_ECONOMY",
+        "serviceName": "FedEx International Economy®",
+        "packagingType": "YOUR_PACKAGING",
+        "commit": {
+          "dateDetail": {
+            "dayOfWeek": "Wed",
+            "dayFormat": "2025-04-23T18:00:00"
+          },
+          "commodityName": "FURNITURE",
+          "delayDetails": [
+            {
+              "date": "2025-04-21",
+              "dayOfWeek": "MON",
+              "level": "COUNTRY",
+              "point": "DESTINATION",
+              "type": "HOLIDAY",
+              "description": "EASTER MONDAY"
+            },
+            {
+              "date": "2025-04-22",
+              "dayOfWeek": "TUE",
+              "level": "COUNTRY",
+              "point": "DESTINATION",
+              "type": "HOLIDAY",
+              "description": "DEL HOL"
+            }
+          ],
+          "deliveryMessages": [
+            " 6:00 P.M. IF NO CUSTOMS DELAY"
+          ],
+          "requiredDocuments": [
+            "INTERNATIONAL_AIRWAY_BILL",
+            "COMMERCIAL_INVOICE"
+          ],
+          "derivedOriginDetail": {
+            "countryCode": "US",
+            "stateOrProvinceCode": "MI",
+            "postalCode": "49423",
+            "serviceArea": "A4",
+            "locationId": "HLMA ",
+            "locationNumber": 0
+          },
+          "derivedDestinationDetail": {
+            "countryCode": "DE",
+            "stateOrProvinceCode": "NW",
+            "postalCode": "40547",
+            "serviceArea": "A2",
+            "locationId": "NRNA ",
+            "locationNumber": 0,
+            "airportId": "CGN"
+          },
+          "saturdayDelivery": false
+        },
+        "customerMessages": [
+          {
+            "code": "SERVICE.TYPE.INTERNATIONAL.MESSAGE",
+            "message": "Rate does not include duties & taxes, clearance entry fees or other import fees.  The payor of duties/taxes/fees will be responsible for any applicable Clearance Entry Fees."
+          },
+          {
+            "code": "DUTIES.TAXES.ESTIMATED",
+            "message": "Duties and Taxes are estimated only and are subject to be changed based on recipient's country,customs,fluctuations in exchange rates and/or changes to tariff rates."
+          },
+          {
+            "code": "REQUEST.IS.COMPLETED",
+            "message": "Request Is Completed."
+          }
+        ],
+        "ratedShipmentDetails": [
+          {
+            "rateType": "ACCOUNT",
+            "ratedWeightMethod": "ACTUAL",
+            "totalDiscounts": 0,
+            "totalBaseCharge": 205.3,
+            "totalNetCharge": 33.85,
+            "totalVatCharge": 0,
+            "totalNetFedExCharge": 33.85,
+            "totalDutiesAndTaxes": 41.2,
+            "totalNetChargeWithDutiesAndTaxes": 75.05,
+            "edtCharges": [
+              {
+                "harmonizedCode": "940370000000",
+                "edtTaxDetail": {
+                  "edtTaxType": "GENERAL_SALES_TAX",
+                  "effectiveDate": "2025-04-15",
+                  "name": "VAT [Value Added Tax; Umsatzsteuer; ]",
+                  "taxableValue": 216.84,
+                  "description": "Reduced rate: 7%",
+                  "formula": "Amount = DPV * 0.19",
+                  "amount": 41.2
+                }
+              }
+            ],
+            "totalDutiesTaxesAndFees": 41.2,
+            "totalAncillaryFeesAndTaxes": 0,
+            "shipmentRateDetail": {
+              "rateZone": "US001O",
+              "dimDivisor": 166,
+              "fuelSurchargePercent": 22.25,
+              "totalSurcharges": 6.16,
+              "totalFreightDiscount": 177.61,
+              "freightDiscount": [
+                {
+                  "type": "VOLUME",
+                  "description": "Volume discount",
+                  "amount": 177.61,
+                  "percent": 86.51
+                }
+              ],
+              "surCharges": [
+                {
+                  "type": "FUEL",
+                  "description": "Fuel Surcharge",
+                  "level": "SHIPMENT",
+                  "amount": 6.16
+                }
+              ],
+              "pricingCode": "",
+              "currencyExchangeRate": {
+                "fromCurrency": "USD",
+                "intoCurrency": "USD",
+                "rate": 1
+              },
+              "totalBillingWeight": {
+                "units": "KG",
+                "value": 1.7
+              },
+              "dimDivisorType": "PRODUCT",
+              "currency": "USD",
+              "rateScale": "US001OFD_03_YOUR_PACKAGING",
+              "totalRateScaleWeight": {
+                "units": "LB",
+                "value": 4
+              }
+            },
+            "ratedPackages": [
+              {
+                "groupNumber": 0,
+                "effectiveNetDiscount": 0,
+                "packageRateDetail": {
+                  "rateType": "PAYOR_ACCOUNT_SHIPMENT",
+                  "ratedWeightMethod": "ACTUAL",
+                  "baseCharge": 205.3,
+                  "netFreight": 27.69,
+                  "totalSurcharges": 6.16,
+                  "netFedExCharge": 33.85,
+                  "totalTaxes": 0,
+                  "netCharge": 33.85,
+                  "totalRebates": 0,
+                  "billingWeight": {
+                    "units": "KG",
+                    "value": 1.7
+                  },
+                  "totalFreightDiscounts": 177.61,
+                  "freightDiscounts": [
+                    {
+                      "type": "VOLUME",
+                      "description": "Volume",
+                      "amount": 177.61,
+                      "percent": 86.51
+                    }
+                  ],
+                  "surcharges": [
+                    {
+                      "type": "FUEL",
+                      "description": "Fuel Surcharge",
+                      "level": "SHIPMENT",
+                      "amount": 6.16
+                    }
+                  ],
+                  "currency": "USD"
+                },
+                "sequenceNumber": 1
+              }
+            ],
+            "currency": "USD"
+          }
+        ],
+        "operationalDetail": {
+          "originLocationIds": [
+            "HLMA "
+          ],
+          "originLocationNumbers": [
+            0
+          ],
+          "originServiceAreas": [
+            "A4"
+          ],
+          "destinationLocationIds": [
+            "NRNA "
+          ],
+          "destinationLocationNumbers": [
+            0
+          ],
+          "destinationServiceAreas": [
+            "A2"
+          ],
+          "destinationLocationStateOrProvinceCodes": [
+            "NW"
+          ],
+          "deliveryDate": "2025-04-23T18:00:00",
           "deliveryDay": "WED",
-          "commitDate": "2025-03-26T18:00:00",
+          "commitDate": "2025-04-23T18:00:00",
           "commitDays": [
             "WED"
           ],
@@ -203,9 +466,9 @@
           "countryCodes": [
             "US"
           ],
-          "airportId": "BNE",
+          "airportId": "CGN",
           "serviceCode": "04",
-          "destinationPostalCode": "4051"
+          "destinationPostalCode": "40547"
         },
         "signatureOptionType": "SERVICE_DEFAULT",
         "serviceDescription": {
@@ -253,7 +516,7 @@
           "description": "International Economy",
           "astraDescription": "IE"
         },
-        "deliveryStation": "WTBA "
+        "deliveryStation": "NRNA "
       },
       {
         "serviceType": "FEDEX_INTERNATIONAL_PRIORITY_EXPRESS",
@@ -261,8 +524,8 @@
         "packagingType": "YOUR_PACKAGING",
         "commit": {
           "dateDetail": {
-            "dayOfWeek": "Fri",
-            "dayFormat": "2025-03-21T12:00:00"
+            "dayOfWeek": "Thu",
+            "dayFormat": "2025-04-17T12:00:00"
           },
           "commodityName": "FURNITURE",
           "deliveryMessages": [
@@ -281,13 +544,13 @@
             "locationNumber": 0
           },
           "derivedDestinationDetail": {
-            "countryCode": "AU",
-            "stateOrProvinceCode": "QL",
-            "postalCode": "4051",
-            "serviceArea": "AM",
-            "locationId": "WTBA ",
+            "countryCode": "DE",
+            "stateOrProvinceCode": "NW",
+            "postalCode": "40547",
+            "serviceArea": "A2",
+            "locationId": "NRNA ",
             "locationNumber": 0,
-            "airportId": "BNE"
+            "airportId": "CGN"
           },
           "saturdayDelivery": false
         },
@@ -295,10 +558,6 @@
           {
             "code": "SERVICE.TYPE.INTERNATIONAL.MESSAGE",
             "message": "Rate does not include duties & taxes, clearance entry fees or other import fees.  The payor of duties/taxes/fees will be responsible for any applicable Clearance Entry Fees."
-          },
-          {
-            "code": "EDT.DETAILS.MISSING",
-            "message": "The harmonized code for the commodity at array index 1 is missing or invalid; estimated duties and taxes were not returned."
           },
           {
             "code": "DUTIES.TAXES.ESTIMATED",
@@ -314,25 +573,39 @@
             "rateType": "ACCOUNT",
             "ratedWeightMethod": "ACTUAL",
             "totalDiscounts": 0,
-            "totalBaseCharge": 343.19,
-            "totalNetCharge": 56.72,
+            "totalBaseCharge": 224.4,
+            "totalNetCharge": 37.01,
             "totalVatCharge": 0,
-            "totalNetFedExCharge": 56.72,
-            "totalDutiesAndTaxes": 0,
-            "totalNetChargeWithDutiesAndTaxes": 56.72,
-            "totalDutiesTaxesAndFees": 0,
+            "totalNetFedExCharge": 37.01,
+            "totalDutiesAndTaxes": 41.8,
+            "totalNetChargeWithDutiesAndTaxes": 78.81,
+            "edtCharges": [
+              {
+                "harmonizedCode": "940370000000",
+                "edtTaxDetail": {
+                  "edtTaxType": "GENERAL_SALES_TAX",
+                  "effectiveDate": "2025-04-15",
+                  "name": "VAT [Value Added Tax; Umsatzsteuer; ]",
+                  "taxableValue": 220,
+                  "description": "Reduced rate: 7%",
+                  "formula": "Amount = DPV * 0.19",
+                  "amount": 41.8
+                }
+              }
+            ],
+            "totalDutiesTaxesAndFees": 41.8,
             "totalAncillaryFeesAndTaxes": 0,
             "shipmentRateDetail": {
-              "rateZone": "J",
+              "rateZone": "D",
               "dimDivisor": 166,
-              "fuelSurchargePercent": 22.5,
-              "totalSurcharges": 10.42,
-              "totalFreightDiscount": 296.89,
+              "fuelSurchargePercent": 22.25,
+              "totalSurcharges": 6.74,
+              "totalFreightDiscount": 194.13,
               "freightDiscount": [
                 {
                   "type": "VOLUME",
                   "description": "Volume discount",
-                  "amount": 296.89,
+                  "amount": 194.13,
                   "percent": 86.51
                 }
               ],
@@ -341,7 +614,7 @@
                   "type": "FUEL",
                   "description": "Fuel Surcharge",
                   "level": "SHIPMENT",
-                  "amount": 10.42
+                  "amount": 6.74
                 }
               ],
               "pricingCode": "",
@@ -352,14 +625,14 @@
               },
               "totalBillingWeight": {
                 "units": "KG",
-                "value": 2.7
+                "value": 1.7
               },
               "dimDivisorType": "PRODUCT",
               "currency": "USD",
-              "rateScale": "US001OFJ_2A_YOUR_PACKAGING",
+              "rateScale": "US001OFD_2A_YOUR_PACKAGING",
               "totalRateScaleWeight": {
                 "units": "LB",
-                "value": 6
+                "value": 4
               }
             },
             "ratedPackages": [
@@ -369,23 +642,23 @@
                 "packageRateDetail": {
                   "rateType": "PAYOR_ACCOUNT_SHIPMENT",
                   "ratedWeightMethod": "ACTUAL",
-                  "baseCharge": 343.19,
-                  "netFreight": 46.3,
-                  "totalSurcharges": 10.42,
-                  "netFedExCharge": 56.72,
+                  "baseCharge": 224.4,
+                  "netFreight": 30.27,
+                  "totalSurcharges": 6.74,
+                  "netFedExCharge": 37.01,
                   "totalTaxes": 0,
-                  "netCharge": 56.72,
+                  "netCharge": 37.01,
                   "totalRebates": 0,
                   "billingWeight": {
                     "units": "KG",
-                    "value": 2.7
+                    "value": 1.7
                   },
-                  "totalFreightDiscounts": 296.89,
+                  "totalFreightDiscounts": 194.13,
                   "freightDiscounts": [
                     {
                       "type": "VOLUME",
                       "description": "Volume",
-                      "amount": 296.89,
+                      "amount": 194.13,
                       "percent": 86.51
                     }
                   ],
@@ -394,7 +667,7 @@
                       "type": "FUEL",
                       "description": "Fuel Surcharge",
                       "level": "SHIPMENT",
-                      "amount": 10.42
+                      "amount": 6.74
                     }
                   ],
                   "currency": "USD"
@@ -416,22 +689,22 @@
             "A4"
           ],
           "destinationLocationIds": [
-            "WTBA "
+            "NRNA "
           ],
           "destinationLocationNumbers": [
             0
           ],
           "destinationServiceAreas": [
-            "AM"
+            "A2"
           ],
           "destinationLocationStateOrProvinceCodes": [
-            "QL"
+            "NW"
           ],
-          "deliveryDate": "2025-03-21T12:00:00",
-          "deliveryDay": "FRI",
-          "commitDate": "2025-03-21T12:00:00",
+          "deliveryDate": "2025-04-17T12:00:00",
+          "deliveryDay": "THU",
+          "commitDate": "2025-04-17T12:00:00",
           "commitDays": [
-            "FRI"
+            "THU"
           ],
           "ineligibleForMoneyBackGuarantee": false,
           "astraDescription": "IPE",
@@ -444,9 +717,9 @@
           "countryCodes": [
             "US"
           ],
-          "airportId": "BNE",
+          "airportId": "CGN",
           "serviceCode": "2A",
-          "destinationPostalCode": "4051"
+          "destinationPostalCode": "40547"
         },
         "signatureOptionType": "SERVICE_DEFAULT",
         "serviceDescription": {
@@ -494,7 +767,7 @@
           "description": "International Priority Express (IP EXP)",
           "astraDescription": "IPE"
         },
-        "deliveryStation": "WTBA "
+        "deliveryStation": "NRNA "
       },
       {
         "serviceType": "FEDEX_INTERNATIONAL_PRIORITY",
@@ -502,12 +775,12 @@
         "packagingType": "YOUR_PACKAGING",
         "commit": {
           "dateDetail": {
-            "dayOfWeek": "Fri",
-            "dayFormat": "2025-03-21T17:00:00"
+            "dayOfWeek": "Thu",
+            "dayFormat": "2025-04-17T18:00:00"
           },
           "commodityName": "FURNITURE",
           "deliveryMessages": [
-            " 5:00 P.M. IF NO CUSTOMS DELAY"
+            " 6:00 P.M. IF NO CUSTOMS DELAY"
           ],
           "requiredDocuments": [
             "INTERNATIONAL_AIRWAY_BILL",
@@ -522,13 +795,13 @@
             "locationNumber": 0
           },
           "derivedDestinationDetail": {
-            "countryCode": "AU",
-            "stateOrProvinceCode": "QL",
-            "postalCode": "4051",
-            "serviceArea": "AM",
-            "locationId": "WTBA ",
+            "countryCode": "DE",
+            "stateOrProvinceCode": "NW",
+            "postalCode": "40547",
+            "serviceArea": "A2",
+            "locationId": "NRNA ",
             "locationNumber": 0,
-            "airportId": "BNE"
+            "airportId": "CGN"
           },
           "saturdayDelivery": false
         },
@@ -536,10 +809,6 @@
           {
             "code": "SERVICE.TYPE.INTERNATIONAL.MESSAGE",
             "message": "Rate does not include duties & taxes, clearance entry fees or other import fees.  The payor of duties/taxes/fees will be responsible for any applicable Clearance Entry Fees."
-          },
-          {
-            "code": "EDT.DETAILS.MISSING",
-            "message": "The harmonized code for the commodity at array index 1 is missing or invalid; estimated duties and taxes were not returned."
           },
           {
             "code": "DUTIES.TAXES.ESTIMATED",
@@ -555,25 +824,39 @@
             "rateType": "ACCOUNT",
             "ratedWeightMethod": "ACTUAL",
             "totalDiscounts": 0,
-            "totalBaseCharge": 326.54,
-            "totalNetCharge": 53.96,
+            "totalBaseCharge": 213.52,
+            "totalNetCharge": 35.21,
             "totalVatCharge": 0,
-            "totalNetFedExCharge": 53.96,
-            "totalDutiesAndTaxes": 0,
-            "totalNetChargeWithDutiesAndTaxes": 53.96,
-            "totalDutiesTaxesAndFees": 0,
+            "totalNetFedExCharge": 35.21,
+            "totalDutiesAndTaxes": 41.46,
+            "totalNetChargeWithDutiesAndTaxes": 76.67,
+            "edtCharges": [
+              {
+                "harmonizedCode": "940370000000",
+                "edtTaxDetail": {
+                  "edtTaxType": "GENERAL_SALES_TAX",
+                  "effectiveDate": "2025-04-15",
+                  "name": "VAT [Value Added Tax; Umsatzsteuer; ]",
+                  "taxableValue": 218.2,
+                  "description": "Reduced rate: 7%",
+                  "formula": "Amount = DPV * 0.19",
+                  "amount": 41.46
+                }
+              }
+            ],
+            "totalDutiesTaxesAndFees": 41.46,
             "totalAncillaryFeesAndTaxes": 0,
             "shipmentRateDetail": {
-              "rateZone": "J",
+              "rateZone": "D",
               "dimDivisor": 166,
-              "fuelSurchargePercent": 22.5,
-              "totalSurcharges": 9.91,
-              "totalFreightDiscount": 282.49,
+              "fuelSurchargePercent": 22.25,
+              "totalSurcharges": 6.41,
+              "totalFreightDiscount": 184.72,
               "freightDiscount": [
                 {
                   "type": "VOLUME",
                   "description": "Volume discount",
-                  "amount": 282.49,
+                  "amount": 184.72,
                   "percent": 86.51
                 }
               ],
@@ -582,7 +865,7 @@
                   "type": "FUEL",
                   "description": "Fuel Surcharge",
                   "level": "SHIPMENT",
-                  "amount": 9.91
+                  "amount": 6.41
                 }
               ],
               "pricingCode": "",
@@ -593,14 +876,14 @@
               },
               "totalBillingWeight": {
                 "units": "KG",
-                "value": 2.7
+                "value": 1.7
               },
               "dimDivisorType": "PRODUCT",
               "currency": "USD",
-              "rateScale": "US001OFJ_2P_YOUR_PACKAGING",
+              "rateScale": "US001OFD_2P_YOUR_PACKAGING",
               "totalRateScaleWeight": {
                 "units": "LB",
-                "value": 6
+                "value": 4
               }
             },
             "ratedPackages": [
@@ -610,23 +893,23 @@
                 "packageRateDetail": {
                   "rateType": "PAYOR_ACCOUNT_SHIPMENT",
                   "ratedWeightMethod": "ACTUAL",
-                  "baseCharge": 326.54,
-                  "netFreight": 44.05,
-                  "totalSurcharges": 9.91,
-                  "netFedExCharge": 53.96,
+                  "baseCharge": 213.52,
+                  "netFreight": 28.8,
+                  "totalSurcharges": 6.41,
+                  "netFedExCharge": 35.21,
                   "totalTaxes": 0,
-                  "netCharge": 53.96,
+                  "netCharge": 35.21,
                   "totalRebates": 0,
                   "billingWeight": {
                     "units": "KG",
-                    "value": 2.7
+                    "value": 1.7
                   },
-                  "totalFreightDiscounts": 282.49,
+                  "totalFreightDiscounts": 184.72,
                   "freightDiscounts": [
                     {
                       "type": "VOLUME",
                       "description": "Volume",
-                      "amount": 282.49,
+                      "amount": 184.72,
                       "percent": 86.51
                     }
                   ],
@@ -635,7 +918,7 @@
                       "type": "FUEL",
                       "description": "Fuel Surcharge",
                       "level": "SHIPMENT",
-                      "amount": 9.91
+                      "amount": 6.41
                     }
                   ],
                   "currency": "USD"
@@ -657,22 +940,22 @@
             "A4"
           ],
           "destinationLocationIds": [
-            "WTBA "
+            "NRNA "
           ],
           "destinationLocationNumbers": [
             0
           ],
           "destinationServiceAreas": [
-            "AM"
+            "A2"
           ],
           "destinationLocationStateOrProvinceCodes": [
-            "QL"
+            "NW"
           ],
-          "deliveryDate": "2025-03-21T17:00:00",
-          "deliveryDay": "FRI",
-          "commitDate": "2025-03-21T17:00:00",
+          "deliveryDate": "2025-04-17T18:00:00",
+          "deliveryDay": "THU",
+          "commitDate": "2025-04-17T18:00:00",
           "commitDays": [
-            "FRI"
+            "THU"
           ],
           "ineligibleForMoneyBackGuarantee": false,
           "astraDescription": "IP EOD",
@@ -685,9 +968,9 @@
           "countryCodes": [
             "US"
           ],
-          "airportId": "BNE",
+          "airportId": "CGN",
           "serviceCode": "2P",
-          "destinationPostalCode": "4051"
+          "destinationPostalCode": "40547"
         },
         "signatureOptionType": "SERVICE_DEFAULT",
         "serviceDescription": {
@@ -735,7 +1018,7 @@
           "description": "International Priority EOD (IP EOD)",
           "astraDescription": "IP EOD"
         },
-        "deliveryStation": "WTBA "
+        "deliveryStation": "NRNA "
       },
       {
         "serviceType": "FEDEX_INTERNATIONAL_CONNECT_PLUS",
@@ -744,9 +1027,19 @@
         "commit": {
           "dateDetail": {
             "dayOfWeek": "Wed",
-            "dayFormat": "2025-03-26T22:00:00"
+            "dayFormat": "2025-04-23T22:00:00"
           },
           "commodityName": "FURNITURE",
+          "delayDetails": [
+            {
+              "date": "2025-04-22",
+              "dayOfWeek": "TUE",
+              "level": "COUNTRY",
+              "point": "DESTINATION",
+              "type": "HOLIDAY",
+              "description": "DEL HOL"
+            }
+          ],
           "deliveryMessages": [
             "10:00 P.M. IF NO CUSTOMS DELAY"
           ],
@@ -763,13 +1056,13 @@
             "locationNumber": 0
           },
           "derivedDestinationDetail": {
-            "countryCode": "AU",
-            "stateOrProvinceCode": "QL",
-            "postalCode": "4051",
-            "serviceArea": "PM",
-            "locationId": "WTBA ",
+            "countryCode": "DE",
+            "stateOrProvinceCode": "NW",
+            "postalCode": "40547",
+            "serviceArea": "A2",
+            "locationId": "NRNA ",
             "locationNumber": 0,
-            "airportId": "BNE"
+            "airportId": "CGN"
           },
           "saturdayDelivery": false
         },
@@ -777,10 +1070,6 @@
           {
             "code": "SERVICE.TYPE.INTERNATIONAL.MESSAGE",
             "message": "Rate does not include duties & taxes, clearance entry fees or other import fees.  The payor of duties/taxes/fees will be responsible for any applicable Clearance Entry Fees."
-          },
-          {
-            "code": "EDT.DETAILS.MISSING",
-            "message": "The harmonized code for the commodity at array index 1 is missing or invalid; estimated duties and taxes were not returned."
           },
           {
             "code": "DUTIES.TAXES.ESTIMATED",
@@ -796,26 +1085,40 @@
             "rateType": "ACCOUNT",
             "ratedWeightMethod": "ACTUAL",
             "totalDiscounts": 0,
-            "totalBaseCharge": 242.11,
-            "totalNetCharge": 28.03,
+            "totalBaseCharge": 178.44,
+            "totalNetCharge": 22.58,
             "totalVatCharge": 0,
-            "totalNetFedExCharge": 28.03,
-            "totalDutiesAndTaxes": 0,
-            "totalNetChargeWithDutiesAndTaxes": 28.03,
-            "totalDutiesTaxesAndFees": 0,
+            "totalNetFedExCharge": 22.58,
+            "totalDutiesAndTaxes": 39.06,
+            "totalNetChargeWithDutiesAndTaxes": 61.64,
+            "edtCharges": [
+              {
+                "harmonizedCode": "940370000000",
+                "edtTaxDetail": {
+                  "edtTaxType": "GENERAL_SALES_TAX",
+                  "effectiveDate": "2025-04-15",
+                  "name": "VAT [Value Added Tax; Umsatzsteuer; ]",
+                  "taxableValue": 205.57,
+                  "description": "Reduced rate: 7%",
+                  "formula": "Amount = DPV * 0.19",
+                  "amount": 39.06
+                }
+              }
+            ],
+            "totalDutiesTaxesAndFees": 39.06,
             "totalAncillaryFeesAndTaxes": 0,
             "shipmentRateDetail": {
-              "rateZone": "J",
+              "rateZone": "D",
               "dimDivisor": 166,
-              "fuelSurchargePercent": 22.5,
-              "totalSurcharges": 5.15,
-              "totalFreightDiscount": 219.23,
+              "fuelSurchargePercent": 22.25,
+              "totalSurcharges": 4.11,
+              "totalFreightDiscount": 159.97,
               "freightDiscount": [
                 {
                   "type": "VOLUME",
                   "description": "Volume discount",
-                  "amount": 219.23,
-                  "percent": 90.55
+                  "amount": 159.97,
+                  "percent": 89.65
                 }
               ],
               "surCharges": [
@@ -823,7 +1126,7 @@
                   "type": "FUEL",
                   "description": "Fuel Surcharge",
                   "level": "SHIPMENT",
-                  "amount": 5.15
+                  "amount": 4.11
                 }
               ],
               "pricingCode": "",
@@ -834,14 +1137,14 @@
               },
               "totalBillingWeight": {
                 "units": "KG",
-                "value": 2.7
+                "value": 1.7
               },
               "dimDivisorType": "PRODUCT",
               "currency": "USD",
-              "rateScale": "USALLFJ_EC_YOUR_PACKAGING",
+              "rateScale": "USALLFD_EC_YOUR_PACKAGING",
               "totalRateScaleWeight": {
                 "units": "LB",
-                "value": 6
+                "value": 4
               }
             },
             "ratedPackages": [
@@ -851,24 +1154,24 @@
                 "packageRateDetail": {
                   "rateType": "PAYOR_ACCOUNT_SHIPMENT",
                   "ratedWeightMethod": "ACTUAL",
-                  "baseCharge": 242.11,
-                  "netFreight": 22.88,
-                  "totalSurcharges": 5.15,
-                  "netFedExCharge": 28.03,
+                  "baseCharge": 178.44,
+                  "netFreight": 18.47,
+                  "totalSurcharges": 4.11,
+                  "netFedExCharge": 22.58,
                   "totalTaxes": 0,
-                  "netCharge": 28.03,
+                  "netCharge": 22.58,
                   "totalRebates": 0,
                   "billingWeight": {
                     "units": "KG",
-                    "value": 2.7
+                    "value": 1.7
                   },
-                  "totalFreightDiscounts": 219.23,
+                  "totalFreightDiscounts": 159.97,
                   "freightDiscounts": [
                     {
                       "type": "VOLUME",
                       "description": "Volume",
-                      "amount": 219.23,
-                      "percent": 90.55
+                      "amount": 159.97,
+                      "percent": 89.65
                     }
                   ],
                   "surcharges": [
@@ -876,7 +1179,7 @@
                       "type": "FUEL",
                       "description": "Fuel Surcharge",
                       "level": "SHIPMENT",
-                      "amount": 5.15
+                      "amount": 4.11
                     }
                   ],
                   "currency": "USD"
@@ -898,20 +1201,20 @@
             "A4"
           ],
           "destinationLocationIds": [
-            "WTBA "
+            "NRNA "
           ],
           "destinationLocationNumbers": [
             0
           ],
           "destinationServiceAreas": [
-            "PM"
+            "A2"
           ],
           "destinationLocationStateOrProvinceCodes": [
-            "QL"
+            "NW"
           ],
-          "deliveryDate": "2025-03-26T22:00:00",
+          "deliveryDate": "2025-04-23T22:00:00",
           "deliveryDay": "WED",
-          "commitDate": "2025-03-26T22:00:00",
+          "commitDate": "2025-04-23T22:00:00",
           "commitDays": [
             "WED"
           ],
@@ -926,11 +1229,11 @@
           "countryCodes": [
             "US"
           ],
-          "airportId": "BNE",
+          "airportId": "CGN",
           "serviceCode": "EC",
-          "destinationPostalCode": "4051"
+          "destinationPostalCode": "40547"
         },
-        "signatureOptionType": "NO_SIGNATURE_REQUIRED",
+        "signatureOptionType": "SERVICE_DEFAULT",
         "serviceDescription": {
           "serviceId": "EP1000000305",
           "serviceType": "FEDEX_INTERNATIONAL_CONNECT_PLUS",
@@ -976,10 +1279,10 @@
           "description": "International Connect Plus",
           "astraDescription": "ICP"
         },
-        "deliveryStation": "WTBA "
+        "deliveryStation": "NRNA "
       }
     ],
-    "quoteDate": "2025-03-17",
+    "quoteDate": "2025-04-15",
     "encoded": false
   }
 }

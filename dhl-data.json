@@ -1,0 +1,111 @@
+{
+  "dhlTotalAmount": 389.61,
+  "dhlTaxAmount": 0,
+  "dhlDutyAmount": 8.28,
+  "dhlCurrency": "USD",
+  "dhlServiceType": "DHL",
+  "dhlResponse": {
+    "products": [
+      {
+        "totalPrice": [
+          {
+            "priceCurrency": "USD",
+            "price": 389.61
+          }
+        ],
+        "detailedPriceBreakdown": [
+          {
+            "priceCurrency": "USD",
+            "breakdown": [
+              {
+                "name": "SINSV",
+                "price": 0,
+                "priceCurrency": "USD"
+              },
+              {
+                "name": "MACHG",
+                "price": 0,
+                "priceCurrency": "USD"
+              },
+              {
+                "name": "SCUSV",
+                "price": 192.99,
+                "priceCurrency": "USD"
+              },
+              {
+                "name": "SPRQN",
+                "price": 138.11,
+                "priceCurrency": "USD"
+              },
+              {
+                "name": "STSCH",
+                "price": 50.24,
+                "priceCurrency": "USD"
+              },
+              {
+                "name": "FUEL SURCHARGE",
+                "serviceCode": "FF",
+                "price": 32.8,
+                "priceCurrency": "USD"
+              },
+              {
+                "name": "Duty Tax Paid",
+                "serviceCode": "DD",
+                "price": 16,
+                "priceCurrency": "EUR"
+              },
+              {
+                "name": "TOTAL DUTIES",
+                "typeCode": "DUTY",
+                "price": 8.28,
+                "priceCurrency": "USD"
+              },
+              {
+                "name": "TOTAL TAXES",
+                "typeCode": "TAX",
+                "price": 0,
+                "priceCurrency": "USD"
+              },
+              {
+                "name": "TOTAL FEES",
+                "typeCode": "FEE",
+                "price": 0,
+                "priceCurrency": "USD"
+              }
+            ]
+          }
+        ],
+        "items": [
+          {
+            "number": 1,
+            "breakdown": [
+              {
+                "name": "CIF",
+                "price": 331.1,
+                "priceCurrency": "USD",
+                "tariffRateFormula": "COST + INSURANCE + FREIGHT"
+              },
+              {
+                "name": "DUTY",
+                "typeCode": "DUTY",
+                "price": 8.28,
+                "priceCurrency": "USD",
+                "tariffRateFormula": "Deminimus :: (2.5% CIF)"
+              },
+              {
+                "name": "VAT",
+                "typeCode": "TAX",
+                "price": 0,
+                "priceCurrency": "USD",
+                "tariffRateFormula": "(0% CIF)"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": [
+      "200203: #/items/number:1/ The provided HS code is not a valid full Import HS code. Ballpark landed cost is estimated using the provided 6-digit HS Code."
+    ]
+  }
+}

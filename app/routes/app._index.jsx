@@ -32,6 +32,19 @@ export default function Index() {
   const [totalItems, setTotalItems] = useState(0);
   const [rates, setRates] = useState(shippingRates || []); // Initialize with loader data
   const [isLoading, setIsLoading] = useState(false); // Changed from true to false
+  const [selectedDateRange, setSelectedDateRange] = useState(() => {
+    const today = new Date();
+    const endDate = new Date(today);
+    
+    // Change this from 30 days to 7 days
+    const startDate = new Date(today);
+    startDate.setDate(today.getDate() - 7); // Changed from 30 to 7 for one week
+    
+    return {
+      start: startDate,
+      end: endDate,
+    };
+  });
 
   const fetchRates = async (page, dateRange) => {
     setIsLoading(true);
@@ -65,7 +78,7 @@ export default function Index() {
   useEffect(() => {
     const today = new Date();
     const initialDateRange = {
-      start: new Date(today.getFullYear(), today.getMonth() - 1, today.getDate()), // One month ago
+      start: new Date(today.getFullYear(), today.getMonth(), today.getDate() - 7), // One week ago
       end: today
     };
     fetchRates(1, initialDateRange);

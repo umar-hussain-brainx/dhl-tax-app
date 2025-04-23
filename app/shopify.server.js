@@ -21,7 +21,7 @@ const shopify = shopifyApp({
   //   MONGODB_DATABASE,
   // ),
   sessionStorage: new MongoDBSessionStorage(
-    "mongodb+srv://atlasDatabase:atlasheadrest!@atlasserverless.upngntj.mongodb.net/",
+    "mongodb+srv://atlasDatabase:atlasheadrest!@atlas-serverless.upngntj.mongodb.net/",
     "taxapp",
   ),
   distribution: AppDistribution.AppStore,

@@ -1,9 +1,9 @@
 {
-  "destinationPostalCode": "4051",
-  "destinationCountry": "AU",
+  "destinationPostalCode": "40547",
+  "destinationCountry": "DE",
   "originPostalCode": "49423",
   "originCountry": "US",
-  "weight": 2.722,
+  "weight": 1.724,
   "customsClearanceDetail": {
     "dutiesPayment": {
       "paymentType": "SENDER",
@@ -17,17 +17,17 @@
     },
     "commodities": [
       {
-        "name": "Headrest for Embody Chair - Sync Fabric - Dark Carbon Sync Graphite Frame",
-        "description": "Headrest for Embody Chair - Sync Fabric - Dark Carbon Sync Graphite Frame",
+        "name": "Headrest for Remastered Aeron Chair - Graphite",
+        "description": "Headrest for Remastered Aeron Chair - Graphite",
         "countryOfManufacture": "US",
         "quantity": 1,
         "quantityUnits": "EA",
         "unitPrice": {
-          "amount": 182.61,
+          "amount": 182.99,
           "currency": "USD"
         },
         "customsValue": {
-          "amount": 182.61,
+          "amount": 182.99,
           "currency": "USD"
         },
         "harmonizedCode": "940370000000"

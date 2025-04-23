@@ -1,0 +1,79 @@
+{
+  "customerDetails": {
+    "shipperDetails": {
+      "postalCode": "40547",
+      "cityName": "Düsseldorf",
+      "countryCode": "DE"
+    },
+    "receiverDetails": {
+      "postalCode": "40547",
+      "cityName": "Düsseldorf",
+      "countryCode": "DE"
+    }
+  },
+  "accounts": [
+    {
+      "typeCode": "shipper",
+      "number": "849272242"
+    }
+  ],
+  "productCode": "N",
+  "unitOfMeasurement": "metric",
+  "currencyCode": "USD",
+  "isCustomsDeclarable": true,
+  "isDTPRequested": true,
+  "isInsuranceRequested": true,
+  "getCostBreakdown": true,
+  "charges": [
+    {
+      "typeCode": "insurance",
+      "amount": 0,
+      "currencyCode": "USD"
+    }
+  ],
+  "shipmentPurpose": "personal",
+  "transportationMode": "air",
+  "merchantSelectedCarrierName": "DHL",
+  "packages": [
+    {
+      "typeCode": "3BX",
+      "weight": 1.724,
+      "dimensions": {
+        "length": 1,
+        "width": 1,
+        "height": 1
+      }
+    }
+  ],
+  "items": [
+    {
+      "number": 1,
+      "name": "Headrest for Remastered Aeron Chair - Graphite",
+      "manufacturerCountry": "US",
+      "quantity": 1,
+      "quantityType": "prt",
+      "unitPrice": 192.99,
+      "unitPriceCurrencyCode": "USD",
+      "customsValue": 0,
+      "customsValueCurrencyCode": "USD",
+      "commodityCode": "6109.10.0010",
+      "weightUnitOfMeasurement": "metric",
+      "category": "201",
+      "goodsCharacteristics": [
+        {
+          "typeCode": "IMPORTER",
+          "value": "Registered"
+        }
+      ],
+      "additionalQuantityDefinitions": [
+        {
+          "typeCode": "DPR",
+          "amount": 1
+        }
+      ],
+      "estimatedTariffRateType": "highest_rate"
+    }
+  ],
+  "getTariffFormula": true,
+  "getQuotationID": false
+}
